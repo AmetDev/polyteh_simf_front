@@ -11,7 +11,7 @@ import eqation2 from '@public/assets/images/home/eqation_2.png'
 function Background() {
   return (
     <div className='h-full overflow-y-hidden absolute top-0 left-0 w-full -z-50'>
-      <img className={style.background1} src={bg1.src} alt='background' />
+      <img className={style.background1} src={bg1.src} alt='background'  />
       <img className={style.background2} src={bg2.src} alt='background' />
       <img className={style.background3} src={bg3.src} alt='background' />
       <img className={style.background4} src={bg4.src} alt='background' />
