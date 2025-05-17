@@ -20,14 +20,14 @@ pipeline {
             }
         }
 
-        stage('Restart with PM2') {
+       stage('Restart with PM2') {
             steps {
                 sh '''
-                    pm2 stop npm || true
-                    pm2 delete npm || true
-                    pm2 start npm -- start
+                    sudo pm2 stop npm || true
+                    sudo pm2 delete npm || true
+                    sudo pm2 start npm -- start
                 '''
             }
-        }
+       }
     }
 }
