@@ -1,0 +1,67 @@
+table {
+	margin-top: 2.5rem;
+	/* width: 100%; */
+	width: 1200px;
+	border: 0.0625rem solid #000;
+	border-collapse: collapse;
+	background-color: #fff;
+	color: var(--color-black);
+	font-size: 1.7rem;
+	font-family: 'Times New Roman', Times, serif;
+
+	img {
+		width: 20.375rem;
+	}
+
+	a:hover {
+		color: var(--color-cyan);
+	}
+}
+
+td {
+	padding: 0.625rem 0 0.625rem 0.625rem;
+	border: 0.0625rem solid #000;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#first td {
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.system,
+.programmer,
+.web {
+	background: rgb(149, 179, 215);
+}
+
+.fridge {
+	background: rgb(182, 221, 232);
+}
+
+.repair {
+	background: rgb(182, 221, 232);
+}
+
+.bread,
+.wine,
+.meet {
+	background: rgb(194, 214, 155);
+}
+
+.accountant {
+	background: rgb(229, 184, 183);
+}
+
+.hostel {
+	background: rgb(251, 212, 180);
+}
+
+@media (width <= 1500px) {
+	table {
+		width: 100%;
+	}
+}

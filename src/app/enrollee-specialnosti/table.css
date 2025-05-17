@@ -1,0 +1,31 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.program-image {
+	max-width: 100%;
+	height: auto;
+}
+
+tr {
+	border-bottom: 1px solid #ddd;
+}
+
+td {
+	padding: 10px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.program-image {
+	width: 10rem !important;
+	height: 10rem !important;
+	flex-shrink: 0;
+}
+.wrapperImg {
+	width: 10rem !important;
+	height: 10rem !important;
+	flex-shrink: 0;
+}

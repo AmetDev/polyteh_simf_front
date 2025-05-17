@@ -1,0 +1,21 @@
+.wrapperInter {
+	font-size: 1.5rem !important;
+	// width: fit-content !important;
+	// margin-left: auto;
+	// margin-right: auto;
+	a {
+		color: var(--color-cyan);
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	div,
+	a,
+	p,
+	span,
+	b,
+	strong {
+		text-align: justify !important;
+	}
+}

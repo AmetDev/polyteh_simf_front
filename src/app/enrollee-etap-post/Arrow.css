@@ -1,0 +1,86 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7.25rem;
+	
+}
+.arrow {
+	position: relative;
+	margin-right: 1rem;
+	
+}
+.line {
+	width: .25rem;
+	height: 18.75rem;
+	background-color: #4682b4;
+	margin: 0 auto;
+}
+.head {
+	width: 0;
+	height: 0;
+	border-left: .625rem solid transparent;
+	border-right: .625rem solid transparent;
+	border-bottom: 1.25rem solid #4682b4;
+	position: absolute;
+	top: -1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.wrapperText {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 25rem;
+
+}
+.item {
+	font-size: 1rem;
+	text-align: left;
+	margin-bottom: 1rem;
+	line-height: 1.5;
+	display: flex;
+  	align-items: center; /* Центрирование текста и круга по вертикали */
+ 	margin-bottom: .625rem; /* Отступ между элементами */
+	
+
+}
+.item:last-child {
+	margin-bottom: 0;
+}
+.item:nth-child(1) .circle {
+  animation-delay: 0s;
+}
+
+.item:nth-child(2) .circle {
+  animation-delay: 0.2s;
+}
+
+.item:nth-child(3) .circle {
+  animation-delay: 0.4s;
+}
+
+.item:nth-child(4) .circle {
+  animation-delay: 0.6s;
+}
+
+.item:nth-child(5) .circle {
+  animation-delay: 0.8s;
+}
+
+.circle {
+  width: 1.25rem; /* Начальный размер круга */
+  height: 1.25rem; /* Начальный размер круга */
+  border-radius: 50%; /* Сделать кругом */
+  border: 0.2rem solid var(--color-white); /* почему не работает??? */
+  background-color: var(--color-blue); /* Цвет круга */
+  transition: all 0.3s ease; /* Плавный переход при изменении размера */
+  margin-right: .625rem;
+}
+
+/* Увеличение круга при наведении */
+.item:hover .circle {
+  width: 1.875rem; /* Увеличенный размер круга */
+  height: 1.875rem; /* Увеличенный размер круга */
+}

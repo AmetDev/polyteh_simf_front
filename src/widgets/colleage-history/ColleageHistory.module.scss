@@ -1,0 +1,137 @@
+.colleage__history {
+	display: flex;
+	gap: 2.1875rem;
+
+	p {
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+
+		@media (max-width: 48rem) {
+			font-size: 1rem;
+		}
+	}
+
+	img {
+		// width: 59.5625rem;
+		// height: 35.5rem;
+		object-fit: cover;
+		border-radius: var(--border-radius-md);
+
+		@media (max-width: 90rem) {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@media (max-width: 90rem) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1.875rem;
+		text-align: center;
+	}
+}
+.colleage__text {
+	p {
+		font-size: 1rem;
+		text-align: justify;
+		line-height: 1.4rem;
+	}
+}
+.colleage__history__text {
+	margin-top: 1.25rem;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.4rem;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		margin-top: 1.25rem;
+		text-align: justify;
+	}
+
+	button {
+		margin-top: 3.125rem;
+	}
+}
+
+.colleage__history__teachers {
+	margin-top: 2.5rem;
+
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 3.125rem;
+		gap: 2.5rem;
+
+		li {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			width: 28.125rem;
+			height: 13.25rem;
+			padding: 1.25rem 3.125rem;
+			gap: .625rem;
+
+			background: var(--color-black);
+			border-radius: var(--border-radius-md);
+
+			transition: background 0.2s ease;
+
+			&:hover {
+				background: var(--color-blue);
+			}
+		}
+	}
+}
+
+.CEO {
+	margin-top: 3.125rem;
+	line-height: 130%;
+	text-align: justify;
+
+	div {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: .625rem;
+		}
+
+		p {
+			width: 36.9375rem;
+		}
+	}
+}
+
+.achives {
+	margin-top: 2.5rem;
+}
+
+.achives__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+
+	img {
+		width: 20.9292rem;
+		height: 64.8233rem;
+		object-fit: cover;
+		border-radius: var(--border-radius-md);
+	}
+}

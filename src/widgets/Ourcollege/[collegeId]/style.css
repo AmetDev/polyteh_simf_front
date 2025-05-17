@@ -1,0 +1,26 @@
+@media print {
+	body {
+		margin: 0 !important;
+	}
+}
+
+.main-container {
+	font-size: 1.5rem !important;
+}
+
+.ck-content {
+	line-height: 1.6;
+	word-break: break-word;
+	width: 100%; /* Добавляем ширину для ck-content */
+}
+
+.editor-container_classic-editor .editor-container__editor {
+	width: 100%; /* Растягиваем контейнер редактора на всю ширину */
+	min-width: 795px;
+	max-width: 795px;
+}
+
+.main-container a {
+	color: #0ff;
+	text-decoration: underline !important;
+}
