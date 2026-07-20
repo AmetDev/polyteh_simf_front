@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/AmetDev/polyteh_simf_front.git', branch: 'main'
+                git url: 'https://github.com/DarleyDev/polyteh_simf_front.git', branch: 'main'
             }
         }
 

@@ -23,6 +23,7 @@ import FirstScreen from '@widgets/home/FirstScreen/FirstScreen'
 import Ministries from '@widgets/home/Ministries/Ministries'
 import Posts from '@widgets/home/Posts/Posts'
 import SwiperInner from '@widgets/Swiper/SwiperInner'
+import Gosuslugi from "@widgets/home/GosuslugiWidget/Gosuslugi";
 
 const Home = () => {
 	const scrollToTop = () => {
@@ -69,6 +70,18 @@ const Home = () => {
 			>
 				↑
 			</button>
+			<div
+				style={{
+					marginTop: '6rem',
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					height: 'auto',
+					width: 'auto',
+				}}
+			>
+				<Gosuslugi />
+			</div>
 		</section>
 	)
 }
