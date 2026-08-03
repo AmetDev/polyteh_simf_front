@@ -3,11 +3,11 @@ import Footer from '@/widgets/footer/footer'
 import Header from '@/widgets/header/header'
 import { Poppins } from 'next/font/google'
 import Head from 'next/head'
-import Script from 'next/script'
 import { Suspense } from 'react'
 import Loader from './loading'
 import StoreProvider from './store/StoreProvider'
 import Background from '@entities/home/Background/Background'
+import SlepScripts from './SlepScripts'
 
 export const metadata = {
 	title: 'Симферопольский политехнический колледж',
@@ -71,8 +71,7 @@ const RootLayout = async ({ children }) => {
 					</div>
 				</StoreProvider>
 
-				<Script src='https://lidrekon.ru/slep/js/jquery.js' />
-				<Script src='https://lidrekon.ru/slep/js/uhpv-full.min.js' />
+				<SlepScripts />
 			</body>
 		</html>
 	)
